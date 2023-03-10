@@ -1,0 +1,60 @@
+/* Mobile 375px */
+/* Desktop 1440px */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white-color:hsl(0,0%,100%);
+    --light-gray-color: hsl(212,45%, 89%);
+    --grayish-blue-color: hsl(220, 15%, 55%);
+    --dark-blue-color:hsl(218,44%,22%);
+
+    --fsize-paragraph: 15px;
+    --ffamily:'Outfit', sans-serif;
+    --flow-bold: 400;
+    --f-bold:700;
+}
+
+body{
+    background-color: var(--light-gray-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    max-width: 80%;
+    margin: auto;
+    font-family: var(--ffamily);
+}
+
+.card {
+    background-color: var(--white-color);
+    padding: 20px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    max-width: 350px;
+}
+
+.card img {
+    border-radius: 30px;
+    max-height: 350px;
+}
+
+.card h1{
+    margin: 0;
+    padding: 0;
+    color: var(--dark-blue-color);
+    font-size: 25px;
+    padding: 10px;
+}
+
+.card p {
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    color: var(--grayish-blue-color);
+    font-weight: var(--flow-bold);
+    padding-bottom: 20px
+}
